@@ -18,9 +18,17 @@
 			</select> 
 			<input type="button" value="Select and Remove"> 
 		</form>
+<script type="text/javascript" src="./script.js">
+function removeColor() {
+  const select = document.getElementById("colorSelect");
+  const selectedIndex = select.selectedIndex;
 
-		<script type="text/javascript" src="./script.js">
-		</script>
+  if (selectedIndex !== -1) {
+    select.remove(selectedIndex);
+  }
+}
+</script>
+	
 
 	</body>
 
